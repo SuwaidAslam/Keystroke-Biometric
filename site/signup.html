@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsePoint</title>
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/media.css" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>PulsePoint</h1>
+        </div>
+            <ul>
+                <a href="./index.html"> <li>Home</li></a>
+                <a href="#"> <li>About</li></a>
+                <a href="#"> <li>Contact</li></a>
+                <a href="./login.html"><li>Login</li></a>
+            </ul>
+    </header>
+
+    <main>
+        <article>
+            
+            <form>
+                <label for="users">Enter Your Name</label>
+                <br>
+                <input id="username" type="username" placeholder="Name">
+                <br>
+                <label for="textInput">Enter Password</label>
+                <label for="textInput" id="smallLabel">Please Enter the Phrase 'roberto' 20 times</label>
+                <br>
+                <input id="phraseInput" type="textInput" onkeydown="press(event)" onkeyup="release(event)" placeholder="Phrase">
+                <br>
+                <span id="count">0/20</span>
+                <br>
+                <div id="result"></div>
+                <br>
+            </form>
+            <input type="submit" value="Send" id="entrar" onclick="sendInput()">
+        </article>
+    </main>
+   
+    <footer>
+        <h4>Page created with 🤍</h4>
+        
+      </footer>  
+      <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
